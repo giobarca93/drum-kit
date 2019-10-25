@@ -62,5 +62,9 @@ function makeSound(key){
     }
 }
 
+function buttonAnimation(currentkey){
+    var activeButton = document.querySelector("." + currentkey);
+    activeButton.classList.add("pressed");
 
+};
 
