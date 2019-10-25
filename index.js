@@ -6,6 +6,7 @@ for (var i = 0; i < numberOfDrumButtons; i++) {
         
     var buttonInnerHTML = this.innerHTML;
     makeSound(buttonInnerHTML);
+    buttonAnimation(buttonInnerHTML);
         
     });
 
@@ -15,6 +16,7 @@ for (var i = 0; i < numberOfDrumButtons; i++) {
 //Detecting keyboard press
 document.addEventListener("keydown", function(event) {
     makeSound(event.key);
+    buttonAnimation(event.key);
 })
 
 
